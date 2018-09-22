@@ -1,21 +1,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>http://127.0.0.1:1111/category-post-2/</loc>
+            <loc>http://localhost:1111/category-post-2/</loc>
             
                 <lastmod>2018-01-05</lastmod>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/category-post/</loc>
+            <loc>http://localhost:1111/category-post/</loc>
             
                 <lastmod>2018-01-06</lastmod>
             
         </url>
     
         <url>
-            <loc>http://127.0.0.1:1111/my-first-post/</loc>
+            <loc>http://localhost:1111/my-first-post/</loc>
             
                 <lastmod>2018-01-07</lastmod>
             
@@ -23,7 +23,7 @@
     
     
         <url>
-            <loc>http://127.0.0.1:1111/</loc>
+            <loc>http://localhost:1111/</loc>
         </url>
     
     
