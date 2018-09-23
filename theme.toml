@@ -1,7 +1,7 @@
 name = "feather"
 description = "A modern blog theme"
 license = "MIT"
-homepage = "https://github.com/piedoom/feather"
+homepage = "https://github.com/VitalyAnkhs/feather"
 min_version = "0.3.4"
 
 [extra]
