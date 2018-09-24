@@ -5,7 +5,7 @@ script:
   - gutenberg build
 
 after_success: |
-  [ $TRAVIS_BRANCH = gh-pages ] &&
+  [ $TRAVIS_BRANCH = master ] &&
   [ $TRAVIS_PULL_REQUEST = false ] &&
   gutenberg build &&
   sudo pip install ghp-import &&
