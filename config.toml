@@ -3,7 +3,7 @@
 # for easier development.
 
 # The URL the site will be built for
-base_url = "vitalyr.com"
+base_url = "/"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
