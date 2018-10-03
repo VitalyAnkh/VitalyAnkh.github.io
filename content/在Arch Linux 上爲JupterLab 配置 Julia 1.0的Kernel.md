@@ -4,7 +4,10 @@ date = 2018-10-04
 category = "工具"
 +++
 
-# 緣起
+## 緣起
 
-Look, you can click the category up there to see more posts like this!
-真好。
+這個國慶做了好多一直想做沒機會做的事。今天想起了學了半調子的Julia，正好也可以繼續了。
+
+## 過程
+
+
