@@ -7,3 +7,4 @@ category = "other"
 # Categories and tags
 
 Look, you can click the category up there to see more posts like this!
+真好。
