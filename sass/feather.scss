@@ -4,7 +4,7 @@
 |  _/ _ \/ _` | __| '_ \ / _ \ '__|
 | ||  __/ (_| | |_| | | |  __/ |   
 |_| \___|\__,_|\__|_| |_|\___|_|  
-*/ 
+*/
 
 // Variables and Mixins
 $break-small: 500px; // at what point the site becomes "mobile"
@@ -16,13 +16,24 @@ $hpadding-small: 16px; // The side-padding on mobile
 // -------------------------------------------------//
 
 // Fade in animation
-@keyframes fadein{
-	0% { opacity:0; }
-	100% { opacity:1; }
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
-@-webkit-keyframes fadein{
-	0% { opacity:0; }
-	100% { opacity:1; }
+
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 
@@ -31,7 +42,12 @@ $hpadding-small: 16px; // The side-padding on mobile
 // -------------------------------------------------//
 
 // Headers
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	margin-bottom: 12px;
@@ -58,7 +74,12 @@ h4 {
 .title-and-info {
 	margin-bottom: 36px;
 
-	h1,h2,h3,h4,h5,h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		margin-bottom: 16px;
 	}
 }
@@ -67,18 +88,20 @@ h4 {
 hr {
 	height: 1px;
 	width: calc(100% - 96px);
-	background: #edeeef;
+	background: #093561;
 	height: 1px;
 	border: none;
 	margin-bottom: 48px;
 
-	@media (max-width: $break-small){
+	@media (max-width: $break-small) {
 		width: calc(100% - 32px);
 	}
 }
 
 // paragraphs and lists
-p, ul, ol {
+p,
+ul,
+ol {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
 	line-height: 1.7;
@@ -87,11 +110,13 @@ p, ul, ol {
 	margin-bottom: 16px;
 }
 
-ul, ol {
+ul,
+ol {
 	p {
 		padding: 0 0 !important;
 	}
-	@media (max-width: $break-small){
+
+	@media (max-width: $break-small) {
 		list-style-position: inside;
 	}
 }
@@ -115,14 +140,17 @@ blockquote {
 	color: #777777;
 	border-left: 3px solid #edeeef;
 	max-width: 600px;
+
 	blockquote {
 		// add margin to nested blockquotes
-	    margin-left: 8px;
-	    margin-bottom: 0;
-	    p {
-	    	margin: 12px 0;
-	    }
+		margin-left: 8px;
+		margin-bottom: 0;
+
+		p {
+			margin: 12px 0;
+		}
 	}
+
 	p {
 		margin: 0;
 	}
@@ -138,24 +166,30 @@ a {
 }
 
 ::selection {
-	background: rgba(237, 18, 73,0.5); /* WebKit/Blink Browsers */
+	background: rgba(237, 18, 73, 0.5);
+	/* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-	background: rgba(237, 18, 73,0.5); /* Gecko Browsers */
-}	
+	background: rgba(237, 18, 73, 0.5);
+	/* Gecko Browsers */
+}
 
 // Code
-pre, code {
+pre,
+code {
 	font-family: "Lucida Console", Monaco, monospace;
 }
 
 // Misc.
-.date, .info { // the small text that shows info related to dates, etc.
+.date,
+.info {
+	// the small text that shows info related to dates, etc.
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	text-transform: uppercase;
 	font-size: 12px;
-	color: grey;	
+	color: grey;
 }
 
 // overall rules
@@ -171,11 +205,21 @@ section {
 	max-width: 900px;
 	width: 100%;
 	margin: 0 auto;
+
 	// margin for text elements but not media
-	p, h1, h2, h3, h4, h5, h6, span, ul, ol {
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	span,
+	ul,
+	ol {
 		padding: 0 $hpadding;
 
-		@media (max-width: $break-small){ 
+		@media (max-width: $break-small) {
 			padding: 0 $hpadding-small;
 		}
 	}
@@ -186,19 +230,31 @@ section {
 	}
 
 	article {
+
 		// reduce header size for items within 
 		// an article (e.g. a blog post)
-		h1,h2,h3,h4,h5,h6 {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
 			margin-top: 36px;
 			margin-bottom: 12px;
 		}
+
 		h1 {
 			font-size: 36px;
 		}
+
 		h2 {
 			font-size: 24px;
 		}
-		h3,h4,h5,h6 {
+
+		h3,
+		h4,
+		h5,
+		h6 {
 			font-size: 18px;
 		}
 	}
@@ -207,22 +263,27 @@ section {
 
 .info {
 	padding: 0 $hpadding;
+
 	span {
 		padding: 0px;
+
 		a {
 			text-decoration: none;
 			color: inherit;
 			font-weight: inherit;
+
 			&:hover {
 				text-decoration: underline !important;
 			}
 		}
 	}
+
 	.divider:before {
 		padding: 0 8px;
 		content: "•";
 	}
-	@media (max-width: $break-small){ 
+
+	@media (max-width: $break-small) {
 		padding: 0 $hpadding-small;
 	}
 }
@@ -230,7 +291,7 @@ section {
 #disqus_thread {
 	padding: 24px $hpadding;
 
-	@media (max-width: $break-small){
+	@media (max-width: $break-small) {
 		padding: 24px $hpadding-small;
 	}
 }
@@ -263,13 +324,14 @@ section {
 
 	@media (max-width: $break-small) {
 		border-radius: 0;
+
 		div {
 			padding-left: $hpadding;
 			padding-right: $hpadding;
 			border-radius: 0;
 		}
 	}
-} 
+}
 
 // inline code
 code {
@@ -292,13 +354,15 @@ pre {
 	word-break: break-all;
 	word-wrap: break-word;
 	background-color: #f9f9f9;
+
 	code {
 		padding: 0;
 		font-size: 100%;
 		color: inherit;
 		background-color: transparent;
 	}
-	@media (max-width: $break-small){ 
+
+	@media (max-width: $break-small) {
 		padding-left: $hpadding-small;
 		padding-right: $hpadding-small;
 		border-radius: 0;
@@ -320,9 +384,9 @@ pre {
 }
 
 a.header-link {
-text-decoration: none;
-color: #414142;
-transition: 0.2s color ease;
+	text-decoration: none;
+	color: #414142;
+	transition: 0.2s color ease;
 
 	&:hover {
 		color: black;
@@ -347,9 +411,11 @@ img.loaded {
 .video-container {
 	position: relative;
 	padding-bottom: 56.25%;
-	padding-top: 30px; height: 0; overflow: hidden;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
 }
-	
+
 .video-container iframe,
 .video-container object,
 .video-container embed {
@@ -371,8 +437,8 @@ footer {
 	display: block;
 	padding: 24px $hpadding;
 
-	@media (max-width: $break-small){
+	@media (max-width: $break-small) {
 		padding-left: $hpadding;
-		padding-right: $hpadding;	
+		padding-right: $hpadding;
 	}
 }
