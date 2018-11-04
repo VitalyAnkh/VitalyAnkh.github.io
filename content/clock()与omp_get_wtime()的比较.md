@@ -8,7 +8,7 @@ category = "Concurrency"
 在计算一个程序的运行时间的时候，如果只是简单的线性执行的程序，那么使用clock() 就可以计算出程序的执行时间，但是其实这个时间是CPU的时间。如果你用clock()计算并行程序执行时间，发现它会把所有CPU的执行都叠加起来。而使用omp_get_wtime()得到的时间是程序绝对运行时间。
 下面这个程序可以方便的看出这两者的差别。
 
-`
+```
 #include <omp.h>
 #include <stdio.h>
 #include <time.h>
@@ -45,7 +45,7 @@ int main() {
     printf("Duration 2 tested by omp_get_wtime(): %lf\n",end_wtime1-start_wtime);
     return 0;
 }
-`
+```
 当设置NUM_THREAD为2时，运行结果如下：
 
 可以看出前者运行时间大概是后者的2倍。
