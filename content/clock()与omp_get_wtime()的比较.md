@@ -1,5 +1,5 @@
 +++
-title = "在Arch Linux 上爲JupterLab 配置 Julia 1.0的Kernel"
+title = "clock()与omp_get_wtime()的比较"
 date = 2018-11-04
 category = "Concurrency"
 +++
