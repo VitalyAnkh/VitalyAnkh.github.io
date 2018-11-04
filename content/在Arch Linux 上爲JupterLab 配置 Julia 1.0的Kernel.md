@@ -10,5 +10,6 @@ category = "工具"
 
 ## 過程
 
-安裝Julia 
-1. 
+1. 不再详述。
+2. 配置JupyterLab 的Julia Kernel。
+   * 
